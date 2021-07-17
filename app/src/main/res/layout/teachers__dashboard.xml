@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Dashboard">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:elevation="2dp"
+        android:id="@+id/heading"
+        android:background="#261243"
+
+
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select your semester"
+            android:textAllCaps="true"
+            android:textColor="#fff"
+            android:layout_marginStart="25sp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:textSize="20sp"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Logout"
+            android:layout_marginEnd="10sp"
+            android:textColor="#fff"
+            android:id="@+id/teacherlogout"
+            android:textSize="15sp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"/>
+
+
+
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/heading"
+        android:id="@+id/semester"
+        android:visibility="visible"
+        android:layout_marginTop="10sp"
+
+        android:layout_height="wrap_content">
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:id="@+id/teachers_dashboard_radioGroup"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:padding="5sp"
+                android:id="@+id/teachers_dashboard_radiobutton1"
+                android:layout_height="wrap_content"
+                android:text="4th Sem"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:padding="5sp"
+                android:id="@+id/teachers_dashboard_radiobutton2"
+                android:layout_height="wrap_content"
+                android:text="5th Sem"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:padding="5sp"
+                android:id="@+id/teachers_dashboard_radiobutton3"
+                android:layout_height="wrap_content"
+                android:text="6th Sem"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:padding="5sp"
+                android:id="@+id/teachers_dashboard_radiobutton4"
+                android:layout_height="wrap_content"
+                android:text="7th Sem"/>
+
+
+
+
+
+        </RadioGroup>
+
+
+
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        android:textSize="30sp"
+        android:id="@+id/selected_semestertecher"
+        android:textColor="#3F51B5"
+        android:layout_below="@+id/semester"/>
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:orientation="vertical"
+        android:id="@+id/teachers_dashboard_linearlayout_operations"
+        android:layout_centerInParent="true"
+        >
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/button"
+            android:textColor="#fff"
+            android:paddingStart="20sp"
+            android:paddingEnd="20sp"
+            android:id="@+id/teachers_dashboard_button_upload_elective"
+            android:layout_height="wrap_content"
+            android:text="upload Elective Subjects"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Subjects Uploaded"
+            android:visibility="gone"
+            android:layout_gravity="center"
+            android:id="@+id/teachers_dashboard_textview_subject_uploaded"
+            android:textSize="15sp"
+            android:textColor="#3F51B5"/>
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/button"
+            android:textColor="#fff"
+            android:paddingStart="20sp"
+            android:paddingEnd="20sp"
+            android:layout_height="wrap_content"
+            android:id="@+id/teachers_dashboard_button_upload_students_cgpa"
+            android:layout_marginTop="20sp"
+            android:text="upload Students CPGA"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CGPA Uploaded"
+            android:visibility="gone"
+            android:id="@+id/cgpa_uploaded"
+            android:layout_gravity="center"
+            android:textSize="15sp"
+            android:textColor="#3F51B5"/>
+
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:orientation="vertical"
+    android:visibility="gone"
+    android:id="@+id/LinearLayout_formfilled"
+    android:layout_gravity="center"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Form Filled"
+        android:layout_gravity="center"
+        android:textSize="30sp"
+
+        android:layout_marginTop="30sp"
+        android:textColor="#3F51B5"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/numerator"
+            android:layout_gravity="center"
+            android:textSize="30sp"
+
+            android:textColor="#3F51B5"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" / "
+            android:layout_gravity="center"
+            android:textSize="30sp"
+
+            android:textColor="#3F51B5"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/denominator"
+            android:layout_gravity="center"
+            android:textSize="30sp"
+
+            android:textColor="#3F51B5"/>
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
+
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button"
+            android:textColor="#fff"
+            android:paddingStart="20sp"
+            android:id="@+id/generateList"
+            android:paddingEnd="20sp"
+            android:layout_marginTop="20sp"
+            android:text="Generate List"/>
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button"
+            android:textColor="#fff"
+            android:paddingStart="20sp"
+            android:visibility="gone"
+            android:id="@+id/downloadList"
+            android:paddingEnd="20sp"
+            android:layout_marginTop="20sp"
+            android:text="Download List"/>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

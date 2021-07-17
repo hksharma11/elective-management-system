@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Student_Login">
+
+    <ImageView
+        android:layout_width="250sp"
+        android:layout_height="250sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50sp"
+        android:id="@+id/logo"
+        android:src="@drawable/elective"/>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@+id/logo"
+        android:layout_marginStart="15sp"
+        android:layout_marginEnd="15sp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_height="wrap_content"
+            android:text="Teachers ID:"
+            android:fontFamily="sans-serif-condensed"/>
+
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:background="@drawable/btn_corner5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+
+
+            <ImageView android:padding="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_person_black_24dp"
+                app:tint="#616161" />
+
+            <View android:background="#ffe0e0e0"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"/>
+
+            <EditText
+                android:id="@+id/edittext_teacherID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#00000000"
+                android:inputType="text"
+                android:padding="10dp"
+
+                android:singleLine="true" />
+
+
+        </LinearLayout>
+
+
+
+        <TextView
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="15dp"
+            android:text="Password"
+            android:fontFamily="sans-serif-condensed"/>
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:background="@drawable/btn_corner5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+
+
+            <ImageView android:padding="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_lock_black_24dp"
+                app:tint="#616161" />
+            <View
+                android:background="#ffe0e0e0"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"/>
+
+            <EditText
+
+                android:background="#00000000"
+                android:padding="10dp"
+                android:id="@+id/edittext_teacherPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:inputType="textPassword"/>
+
+        </LinearLayout>
+
+        <Button
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:background="@drawable/button"
+            android:layout_width="200sp"
+            android:paddingStart="30sp"
+            android:id="@+id/button_teacherSignin"
+            android:paddingEnd="30sp"
+            android:layout_height="wrap_content"
+
+            android:text="S I G N I N"
+
+            android:layout_gravity="center"
+            android:layout_marginTop="50sp"
+            android:textAllCaps="false"/>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

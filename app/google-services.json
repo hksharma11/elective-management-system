@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "491711978558",
+    "firebase_url": "https://elective-selection-syste-47709.firebaseio.com",
+    "project_id": "elective-selection-syste-47709",
+    "storage_bucket": "elective-selection-syste-47709.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:491711978558:android:dffa5e3d69147c49ac856f",
+        "android_client_info": {
+          "package_name": "com.e.electiveselectionsystem"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "491711978558-820i23juourlqidvfe6prqcsccl92jgm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCVA9ick11lermJqkiOwGyEtS_dWbFGt6M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "491711978558-820i23juourlqidvfe6prqcsccl92jgm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

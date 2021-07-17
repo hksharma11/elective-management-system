@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@android:color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+
+
+    <LinearLayout android:orientation="vertical"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout android:gravity="top"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="16dp"
+            android:layout_weight="0.5"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp">
+
+            <TextView
+                android:textStyle="bold"
+                android:textSize="24sp"
+                android:textColor="@android:color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="REGISTER"
+                android:fontFamily="sans-serif-condensed"/>
+
+
+
+            <LinearLayout android:orientation="horizontal"
+                android:background="@android:color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Welcome to "
+                    android:fontFamily="sans-serif-condensed"/>
+
+                <TextView android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+                    android:textStyle="bold"
+                    android:textColor="#000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Elective Section System"
+                    android:fontFamily="sans-serif-condensed"/>
+
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp">
+
+
+            <TextView
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="50dp"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:fontFamily="sans-serif-condensed"/>
+
+
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:background="@drawable/btn_corner5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp">
+
+
+                <ImageView android:padding="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_person_black_24dp"
+                    app:tint="#616161" />
+
+                <View android:background="#ffe0e0e0"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"/>
+
+                <EditText
+                    android:id="@+id/register_edittext_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#00000000"
+                    android:inputType="text"
+                    android:padding="10dp"
+
+                    android:singleLine="true" />
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="15dp"
+                android:text="Registration Number"
+                android:fontFamily="sans-serif-condensed"/>
+
+
+
+
+
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:background="@drawable/btn_corner5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:padding="10dp"
+                    android:src="@drawable/ic_person_black_24dp"
+                    app:tint="#616161" />
+                <View
+                    android:background="#ffe0e0e0"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"/>
+
+                <EditText
+
+                    android:background="#00000000"
+                    android:padding="10dp"
+                    android:id="@+id/register_registration_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+
+                    android:inputType="number"/>
+
+            </LinearLayout>
+
+
+
+
+
+            <TextView
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="15dp"
+                android:text="Phone Number"
+                android:fontFamily="sans-serif-condensed"/>
+
+
+
+
+
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:background="@drawable/btn_corner5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp">
+
+
+                <ImageView android:padding="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_call_white_24dp"
+                    app:tint="#616161" />
+                <View
+                    android:background="#ffe0e0e0"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"/>
+
+                <EditText
+
+                    android:id="@+id/register_edittext_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#00000000"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:padding="10dp"
+                    android:singleLine="true" />
+
+            </LinearLayout>
+
+
+
+            <TextView
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="15dp"
+                android:text="Password"
+                android:fontFamily="sans-serif-condensed"/>
+
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:background="@drawable/btn_corner5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp">
+
+
+                <ImageView android:padding="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_lock_black_24dp"
+                    app:tint="#616161" />
+                <View
+                    android:background="#ffe0e0e0"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"/>
+
+                <EditText
+
+                    android:background="#00000000"
+                    android:padding="10dp"
+                    android:id="@+id/register_edittext_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:inputType="textPassword"/>
+
+            </LinearLayout>
+
+
+
+
+            <TextView
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:id="@+id/register_textview_register"
+                android:padding="8dp"
+                android:layout_marginTop="10sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="REGISTER"
+                android:fontFamily="sans-serif-condensed"/>
+            <TextView
+                android:textSize="16sp"
+                android:textColor="#616161"
+                android:id="@+id/register_textview_haveaccount"
+                android:gravity="center"
+                android:layout_gravity="center"
+
+                android:padding="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Already have an account ??"
+                android:fontFamily="sans-serif-condensed"/>
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+
+</ScrollView>
